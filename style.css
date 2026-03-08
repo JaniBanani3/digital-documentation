@@ -1,0 +1,195 @@
+html,
+body {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("1.drawing_algorithms/hintergrundbasics.png");
+  font-size: 16px;
+  min-height: 100vh;
+  font-family: sans-serif;
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.click-through {
+  pointer-events: none;
+}
+
+svg * {
+  pointer-events: auto;
+}
+
+.container-linien {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#line {
+  position: absolute;
+  width: 50%;
+  height: 40%;
+  margin-left: 55%;
+  top: -7%;
+}
+
+#line1 {
+  margin-left: 18%;
+  width: 90%;
+}
+
+#line1 svg {
+  transition: all 0.4s ease;
+}
+
+#line1 svg:hover {
+  transform: scale(1.15) rotate(3deg);
+  filter: drop-shadow(0 0 20px rgba(234, 98, 139, 0.8));
+}
+
+#line2 {
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  margin-left: 3%;
+}
+
+#line2 svg {
+  transition: all 0.4s ease;
+}
+
+#line2 svg:hover {
+  transform: scale(1.15) rotate(3deg);
+  filter: drop-shadow(0 0 20px rgba(197, 79, 150, 0.8));
+}
+
+#line3 {
+  position: absolute;
+  top: 17%;
+  margin-left: -1%;
+  width: 105%;
+}
+
+#line3 svg {
+  transition: all 0.4s ease;
+}
+
+#line3 svg:hover {
+  transform: scale(1.15) rotate(3deg);
+  filter: drop-shadow(0 0 20px rgba(223, 83, 148, 0.8));
+}
+
+#line4 {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-left: 1%;
+}
+
+#line4 svg {
+  transition: all 0.4s ease;
+}
+
+#line4 svg:hover {
+  transform: scale(1.15) rotate(3deg);
+  filter: drop-shadow(0 0 20px rgba(211, 40, 134, 0.8));
+}
+
+#line5 {
+  position: absolute;
+  width: 100%;
+  top: 98%;
+  margin-left: -4%;
+}
+
+#line5 svg {
+  transition: all 0.4s ease;
+}
+
+#line5 svg:hover {
+  transform: scale(1.15) rotate(3deg);
+  filter: drop-shadow(0 0 20px rgba(225, 24, 144, 0.8));
+}
+
+#line6 {
+  position: absolute;
+  width: 40%;
+  top: 128%;
+  margin-left: -10%;
+}
+
+/* Glitzerspur bei Mausbewegung */
+.sparkle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  animation: sparkleFloat 1s ease-out forwards;
+}
+
+@keyframes sparkleFloat {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(var(--tx), var(--ty)) scale(0) rotate(360deg);
+  }
+}
+
+.mouse-trail {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  border-radius: 50%;
+  animation: trailFade 0.8s ease-out forwards;
+}
+
+@keyframes trailFade {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+/* FOOTER */
+footer {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 5px 10px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.footer--item {
+  font-size: 0.8rem;
+  max-width: 50%;
+  text-align: right;
+}
+
+footer a {
+  color: rgb(153, 0, 255);
+  text-decoration: none;
+}
+
+footer a:hover {
+  opacity: 0.7;
+}

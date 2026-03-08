@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables & Parameters</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Outfit:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="headline-font.css"/>
+  </head>
+  <body>
+    <div class="header">
+      <!-- Images Container -->
+      <div class="images-container">
+        <div class="image-wrapper wrapper-5">
+          <img src="1.drawing_algorithms/pilzvariablen.png" alt="Pilzvariablen" />
+          <span class="image-caption">Variablen zu meinem Pilz-Generator</span>
+        </div>
+
+        <div class="image-wrapper wrapper-6">
+          <img src="1.drawing_algorithms/javanotes.png" alt="Java-Script Notizen" />
+          <span class="image-caption">Erste Java-Script Notizen</span>
+        </div>
+
+        <!-- Side text panel -->
+        <div class="side-text-panel">
+          <div class="side-text-inner">
+            <h3>Was ich in der Woche gelernt habe</h3>
+            <p>
+            Der Einstieg begann mit der Entwicklung einer eigenen “Morphological Box”. 
+            Der erste Schritt war zunächst, Variablen zu nennen und diese analog abzubilden. 
+            Der zweite Schritt war das Kombinieren. Dabei lernte ich schnell die Grenzen 
+            beim analogen Arbeiten kennen. Als Form wählte ich einen Stern, der in “Anzahl” 
+            und “Zacken(anzahl)” Variablen besaß. Das Problem, welches ich bei der Umsetzung 
+            der Variablen wahrnahm, war, dass es ziemlich lange dauern würde, 
+            zum Beispiel zehn Sterne mit jeweils zwanzig Zacken zu zeichnen. 
+            Also änderte ich die Variablen in kleinere Mengen. Digital hätte ich diese Grenzen nicht. 
+
+            Das verdeutlichte das “Magic Triangle”: Der Übergang von statischen, 
+            zweidimensionalen Designs zu flexiblen, dreidimensionalen Designs. 
+            Der erste Kontakt mit Java-Script war theoretisch geprägt. Durch Beispiel-Websites 
+            bekam ich ein Gespür für mögliche Interaktionen, die das Lernen und das Bedienen 
+            einer Website zu einem besonderen Erlebnis machen können. 
+            The Magic Triangle spricht von einer “Pedagogy of Design”.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header Content -->
+      <div class="header-content">
+        <h1><span>Variables</span><span>& Parameters</span></h1>
+        <p class="subtitle">The Morphological Box</p>
+        <button class="expand-button" id="expandBtn">
+          Mehr über meine persönlichen Erfahrungen
+        </button>
+      </div>
+
+      <!-- Buttons -->
+      <div class="panel">
+        <button class="orb" onclick="openModal('modal1')">
+          <span
+            >Mein Werkzeug<br />ist ein...<br /><strong>Generator</strong></span>
+        </button>
+        <button class="orb" onclick="openModal('modal2')">
+          <span>Es ist ein<br />Werkzeug für...</span>
+        </button>
+        <button class="orb" onclick="openModal('modal3')">
+          <span
+            >Das Tool macht...<br /><strong
+              >einfacher /<br />schwieriger</strong>
+            </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Blur Overlay -->
+    <div class="blur-overlay" id="blurOverlay">
+      <div class="text-container" id="textContainer">
+        <h2>Meine persönlichen Erfahrungen</h2>
+        <p>
+          Diese Woche begann ich mit einem Neustart. Ich schaute mir intensiv Youtube-Videos 
+          zu HTML und CSS an. Die Theorie und Wiederholung der ersten Woche taten gut, um die Angst vor dem 
+          digitalen Arbeiten zu lösen und das Chaos im Kopf zu ordnen. Nochmal ganz von vorne zu beginnen, 
+          während die Kommilitonen bereits fortgeschrittene Projekte umsetzten, war zwar frustrierend, 
+          aber ich lernte umzugehen, in meinem Tempo zu arbeiten. Da ich keine CSS-Shape aus der ersten
+          Woche besaß, konnte ich die Anwendung von Java-Script nicht umsetzen. Das Vorgehen gab mir ein Gefühl von Sicherheit
+          und Kontrolle, da ich in der Praxis zu überfordert war. Die Zuversicht wuchs, da ich dreidemensionale 
+          Designs in meinem Kopf immer mehr formen konnte. Das "Wireframing" zeigte mir, dass ich
+          bereits ein Gespür für die Entwicklung von digitalen Designs habe. Ich lernte Möglichkeiten kennen, realistische
+          Variablen zu entwickeln und Interaktionen für potentielle Websites zu definieren. Das Wireframing war eine 
+          spannende Übung, die mir die Bedienung von digitalen Tools näher brachte. Ich merkte, dass mir analoge Skizzen helfen, 
+          digitale Ideen zu entwickeln. 
+        </p>
+      </div>
+      <button class="close-button" id="closeBtn">&times;</button>
+    </div>
+
+    <!-- Orb Modal 1 -->
+    <div class="overlay" id="modal1" onclick="closeOnBackdrop(event, 'modal1')">
+      <div class="modal">
+        <button class="close-btn" onclick="closeModal('modal1')">
+          &#x2715;
+        </button>
+        <img src="1.drawing_algorithms/Pilzidee.png" alt="Pilzidee" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Orb Modal 2 -->
+    <div class="overlay" id="modal2" onclick="closeOnBackdrop(event, 'modal2')">
+      <div class="modal">
+        <button class="close-btn" onclick="closeModal('modal2')">
+          &#x2715;
+        </button>
+        <img src="1.drawing_algorithms/kalender.png" alt="Kalender" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Orb Modal 3 -->
+    <div class="overlay" id="modal3" onclick="closeOnBackdrop(event, 'modal3')">
+      <div class="modal">
+        <button class="close-btn" onclick="closeModal('modal3')">
+          &#x2715;
+        </button>
+        <img src="1.drawing_algorithms/antihate-tool.png" alt="antihate-tool" />
+        </div>
+      </div>
+    </div>
+
+    <script src="variables.js"></script>
+  </body>
+</html>

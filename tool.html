@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tool.css" />
+    <link rel="stylesheet" href="headline-font.css" />
+    <title>Building a Tool</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <!-- Images Container -->
+      <div class="images-container">
+        <div class="image-wrapper wrapper-5">
+          <img src="1.drawing_algorithms/toolform.png" alt="Tool Form" />
+          <span class="image-caption"
+            >Veränderung des Designs für einfacheres Übersetzen in Boxen</span
+          >
+        </div>
+
+        <div class="image-wrapper wrapper-6">
+          <img src="1.drawing_algorithms/flexbox.png" alt="flexbox" />
+          <span class="image-caption">Erste Skizze der Pilz-Elemente</span>
+        </div>
+
+        <!-- Side text panel -->
+        <div class="side-text-panel">
+          <div class="side-text-inner">
+            <h3>Idee</h3>
+            <p>
+              Die Idee für den Pilz-Generator entstand bereits in der zweiten
+              Woche, als wir die Übung "Wireframing" durchführten. Dort war die
+              Frage nach einem Tool. Die Woche davor hatten wir als Gruppe ein
+              Kartenspiel entworfen, in dem alle Charaktere Pilze waren. Da mir
+              das Designen eines Pilzes besonders viel Spaß gemacht hat, kam mir
+              der Gedanke, ein digitales Projekt daraus zu machen. Da Pilze in
+              Form und Farbe unglaublich vielfältig gestaltet werden können, bot
+              sich diese Idee an, um die Möglichkeiten von Variablen und
+              Parametern zu erkunden. Die Weiterentwicklung zu den bunten Farben
+              und der "Magic-Mushroom-Ästhetik" entstand dann im Prozess. Ich
+              wollte etwas simples und gleichzeitig visuell ansprechendes
+              schaffen. Da mir das Coden immernoch schwerfiel, war es mir
+              wichtig, dass das Projekt nicht zu komplex wird, damit ich es auch
+              umsetzen kann. Ich glaube, dass dieses Tool sehr gut zu meinen
+              Ansprüchen gepasst hat. Im Laufe der Zeit konnte ich weitere
+              Möglichkeiten entdecken, meine Skills zu vertiefen und das Tool zu
+              erweitern.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header Content -->
+      <div class="header-content">
+        <h1><span>Building</span><span>a Tool</span></h1>
+        <p class="subtitle">The Magic-Mushroom Generator</p>
+        <button class="expand-button" id="expandBtn">
+          Mehr über meine persönlichen Erfahrungen
+        </button>
+      </div>
+
+      <!-- Button -->
+      <div class="panel">
+        <button class="orb" onclick="openModal('modal1')">
+          <span>Erste<br />Notizen zur<br /><strong>Übersetzung</strong></span>
+        </button>
+        <button class="orb" onclick="openModal('modal2')">
+          <span>Umsetzung/<br />Methoden</span>
+        </button>
+        <button class="orb" onclick="openModal('modal3')">
+          <span
+            >Umgang<br /><strong>mit<br />KI</strong></span
+          >
+        </button>
+      </div>
+    </div>
+
+    <!-- Blur Overlay -->
+    <div class="blur-overlay" id="blurOverlay">
+      <div class="text-container" id="textContainer">
+        <h2>Meine persönlichen Erfahrungen</h2>
+        <p>
+          Ich hatte nicht die beste Zeit mit dem Coden, da es mir nach wie vor
+          schwer gefallen ist, die Logik hinter den Codes zu verstehen und
+          Fehler zu erkennen. Doch gleichzeitig habe ich in kleinen Schritten
+          Verbesserungen wahrgenommen. Die ersten Male, in denen eine gewünschte
+          Veränderung reibungslos funktioniert hat, waren unglaublich
+          motivierend. Ich habe viele Erkenntnisse über mich und meine
+          Arbeitsweise gewonnen. Ich konnte mich zum Beispiel viel besser
+          zuhause auf das Coden einlassen, da ich die Vergleiche mit
+          Kommilitonen und die Angst vor Fehlern loslassen konnte. Ich habe
+          gelernt, wie ich ein Design in meinen Kopf entwickeln kann, um es dann
+          in einen Code zu verwandeln. Diese Erkenntnis hat lange gedauert. Die
+          Konzentration auf eine Stelle des Codes zu legen und die Geduld zu
+          haben, das Problem oder die Umsetzung herauszufinden, war extrem
+          schwer für mich. Das Debugging hat mich oft frustriert und nervös
+          gemacht, da ich nicht wusste, wie ich die Fehler finden soll. Doch das
+          Entwickleln von Fragen und das Fokussieren auf die eine Stelle, waren
+          die Lösung. Das Arbeiten mit einer künstlichen Intelligenz war ein
+          wichtiger Teil des Projektes, den ich auch erlernen musste. Doch je
+          genauer ich wusste, was ich wie in der Website umsetzen wollte, desto
+          besser konnte ich KI nutzen. Als ich das passende Design für die
+          Pilz-Teile gefunden hatte, kamen Ideen, das Tool zu erweitern. Der
+          Download-Button und die randomisierte Benennung der Magic-Mushrooms
+          kamen erst später hinzu. Die Wichtigkeit einer klaren Ordnerstruktur
+          habe ich unterschätzt. Ich bin immernoch dabei, ein passendes System
+          für mich zu finden. Das ständige Suchen nach Dateien und Codes hat
+          mich oft ausgebremst. Doch das Chaos in meinen Dateien und meiner
+          Organisation wird mich sicher noch länger begleiten. Aber die
+          Erkenntnis zu haben, dass ich in diesem Punkt etwas ändern muss, hilft
+          mir weiter.Ich hätte nie gedacht, dass ich in der Lage sein werde,
+          diese Website zu erschaffen. Ich bin unglaublich dankbar für diese
+          wertvolle Erfahrung mit digitalen Arbeiten.
+        </p>
+      </div>
+      <button class="close-button" id="closeBtn">&times;</button>
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="overlay" id="modal1" onclick="closeOnBackdrop(event, 'modal1')">
+      <div class="modal">
+        <button class="close-btn" onclick="closeModal('modal1')">
+          &#x2715;
+        </button>
+          <img src="1.drawing_algorithms/stickynotes.png" alt="sticky notes" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="overlay" id="modal2" onclick="closeOnBackdrop(event, 'modal2')">
+      <div class="modal">
+        <button class="close-btn" onclick="closeModal('modal2')">
+          &#x2715;
+        </button>
+          <img src="1.drawing_algorithms/methoden.png" alt="Methoden" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="overlay" id="modal3" onclick="closeOnBackdrop(event, 'modal3')">
+      <div class="modal">
+        <button class="close-btn" onclick="closeModal('modal3')">
+          &#x2715;
+        </button>
+          <img src="1.drawing_algorithms/ki.png" alt="KI" />
+        </div>
+      </div>
+    </div>
+
+    <script src="tool.js"></script>
+  </body>
+</html>

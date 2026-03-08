@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="grids&modules.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="headline-font.css" />
+    <title>Grids & Modules</title>
+  </head>
+  <body>
+    <div class="header">
+      <!-- Images Container -->
+      <div class="images-container">
+        <!-- Rechte Spalte: Bilder 1–3 -->
+        <img
+          src="1.drawing_algorithms/alphabet.png"
+          alt="alphabet"
+          class="floating-image image-1"
+        />
+        <img
+          src="1.drawing_algorithms/fontdigital.png"
+          alt="fontdigital"
+          class="floating-image image-2"
+        />
+        <img
+          src="1.drawing_algorithms/schablonen.png"
+          alt="schablonen"
+          class="floating-image image-3"
+        />
+
+        <!-- Rechte Spalte: Bild 4 -->
+        <div class="image-wrapper wrapper-4">
+          <img src="1.drawing_algorithms/schema.png" alt="schema" />
+        </div>
+
+        <!-- Mitte: Image mit Caption -->
+        <div class="image-wrapper wrapper-5">
+          <img src="1.drawing_algorithms/schwamm.png" alt="Schwamm" />
+          <span class="image-caption"
+            >Eine Schriftart aus wenigen geschnittenen Schwämmen</span
+          >
+        </div>
+
+        <!-- Links: Image mit Caption -->
+        <div class="image-wrapper wrapper-6">
+          <img src="1.drawing_algorithms/tabelle.png" alt="tabelle " />
+          <span class="image-caption">Tabelle</span>
+        </div>
+
+        <!-- Seitlicher Textbereich -->
+        <div class="side-text-panel">
+          <div class="side-text-inner">
+            <h3>Themen dieser Woche</h3>
+            <p>
+              Das Thema "Grids & Modules" begleitet mich bis heute und hat eine
+              gewisse Präsenz im Alltag eingenommen. Immer wieder begegnen mir
+              Raster und Module in meiner Umgebung. Dass diese Strukturen in
+              Codes umgewandelt werden können, finde ich fasziniereend. Eine
+              neue Inspirationsquelle wurde freigeschaltet. Von minimalistisch
+              bis komplex können Raster und Module in allen möglichen Formen und
+              Größen auftauchen. Den Basketballkorb, den ich öfter besuche, fand
+              ich ein passendes Beispiel. Das symmetrische Gitter des Backboards
+              neben dem ausgeleiterten, teilweise kaputten Netz, zeigt die
+              Vielfältigkeit von Rastern. Ich begann mit den Holzschablonen zu
+              arbeiten. Dabei sollte immer ein "A" abgebildet werden. Es gab
+              unendlich Kombinationsmöglichkeiten mit wenigen Schablonen. Das
+              führte mich näher an eine eigene Ausarbeitung einer Schriftart
+              heran. Der gewünschte "Style" eines Fonts kann durch die Wahl des
+              Rasters eingeleitet werden. Schmal oder breit, verspielt oder
+              streng, symmetrisch oder asymmetrisch. Ich entschied mich für ein
+              analoges Modul, welches aus wenigen geschnittenen Schwämmen
+              besteht.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header Content – oben links -->
+      <div class="header-content">
+        <h1>Grids<br />& Modules</h1>
+        <p class="subtitle">Raster aus meiner Umgebung</p>
+        <button class="expand-button" id="expandBtn">
+          Mehr über die Entwicklung des Fonts "Sponge"
+        </button>
+      </div>
+    </div>
+
+    <!-- Blur Overlay -->
+    <div class="blur-overlay" id="blurOverlay">
+      <div class="text-container" id="textContainer">
+        <h2>Über die Entwicklung des Fonts "Sponge"</h2>
+        <p>
+          Die Entwicklung eines eigenen Fonts hat mich näher an Typografie
+          herangeführt. Ich hatte bereits vor dem Studium eine Schriftart
+          eintwickelt. Die Herangehensweise war jedoch eher intuitiv und fand
+          ohne ein System statt. Daher war es spannend die Möglichkeiten von
+          Rastern und Modulen zu entdecken und mich in Typografie zu verbessern
+          und weiterzuentwickeln. Aus dem Bach heraus wählte ich den Schwamm als
+          Modul. Ich hatte Lust auf eine organische Form und fand die Textur des
+          Schwamms interessant. Zunächst schnitt ich ein rundliches Element und
+          ein Gerades für das "A" aus. Jedoch war das zu minimalistisch und für
+          andere Buchstaben reichten diese Elemente nicht aus. So entwickelten
+          sich die Formen weiter, bis ich schließlich auf die fünf Elemente kam.
+          Der analoge Druck in Lila mit Gouache und Wasser brachte die
+          signifikante Textur von "Sponge" hervor. Für die Digitalisierung
+          nutzte ich die kostenlose Website "Calligraphr". Dort konnte ich ein
+          gewünschtes Panel erstellen, indem ich die ausgeschnittenen Buchstaben
+          einfügen konnte. Der Look von "Sponge" gefällt mir sehr gut, da ich
+          die Lerneinheit "Grids und Module" in die Entwicklung einbinden
+          konnte. Man sieht ein System hinter der Schrift, welches die
+          Lesbarkeit verbessert. Der Charakter entsteht durch die
+          wiederkehrenden Elemente. Auch die unterschiedlchen Strukturen des
+          Schwamms und der durch Zufall geprägte Auftrag der Farbe machen
+          "Sponge" zu etwas Individuellem.
+        </p>
+      </div>
+      <button class="close-button" id="closeBtn">&times;</button>
+    </div>
+
+    <script src="grids&modules.js"></script>
+  </body>
+</html>
